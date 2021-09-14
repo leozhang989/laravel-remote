@@ -1,21 +1,14 @@
 {
-    "name": "spatie/laravel-remote",
-    "description": "Execute Artisan commands on remote servers",
+    "name": "leozhang989/laravel-remote",
+    "description": "Execute Artisan commands on remote servers, support for php < 8.0",
     "keywords": [
-        "spatie",
+        "leozhang989",
         "laravel-remote"
     ],
-    "homepage": "https://github.com/spatie/laravel-remote",
+    "homepage": "https://github.com/leozhang989/laravel-remote",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "role": "Developer"
-        }
-    ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.0",
         "illuminate/contracts": "^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "spatie/ssh": "^1.5"
@@ -30,13 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Remote\\": "src",
-            "Spatie\\Remote\\Database\\Factories\\": "database/factories"
+            "Leozhang989\\Remote\\": "src",
+            "Leozhang989\\Remote\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Remote\\Tests\\": "tests"
+            "Leozhang989\\Remote\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +43,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Remote\\RemoteServiceProvider"
+                "Leozhang989\\Remote\\RemoteServiceProvider"
             ]
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+
